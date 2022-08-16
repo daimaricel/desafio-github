@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url("../images/canchasdelanterasdron.jpg");
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  width: 12rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: #006736;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: nav;
+}
+
+nav ul li {
+  margin: 1rem;
+  width: 126px;
+  height: 20px;
+  border: #006736 1px hidden;
+}
+
+ul li a {
+  color: white;
+  font-size: 16px;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.h1 {
+  background-color: #db9300;
+  color: white;
+}
+
+.centrar {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Ruda", sans-serif;
+}
+
+.texto {
+  font-size: 18px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.subtitulos {
+  border-top: 5px #db9300 double;
+  border-bottom: 5px #006736 double;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* index */
+
+.section1 {
+  background-color: #db9300;
+  padding: 40px;
+  line-height: 1.5;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.section2 {
+  grid-area: section2;
+}
+
+/*alquiler*/
+
+.contenedorAlquiler {
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: contenedor;
+}
+
+.imgMariposa {
+  width: 500px;
+  grid-area: mari;
+}
+
+.formularioClases {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form div {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#ig {
+  color: black;
+}
+
+.box {
+  border: 3px #006736 outset;
+  margin-left: 5px;
+}
+
+footer {
+  background-color: #006736;
+  font-family: "Ruda", sans-serif;
+  font-size: 12px;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconify {
+  font-size: 2rem;
+  margin: 5px;
+  color: white;
+}
+
+/* Grid Index*/
+
+.header {
+  grid-area: header;
+}
+.h1 {
+  grid-area: titulo;
+}
+.footer {
+  grid-area: footer;
+}
+.section1 {
+  grid-area: section1;
+}
+
+.gridIndex {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "section1 section1 section2 section2"
+    "section1 section1 section2 section2"
+    "footer footer footer footer";
+  gap: 1rem;
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .gridIndex {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav titulo titulo"
+      "nav section1 section1"
+      "nav section2 section2"
+      "footer footer footer";
+  }
+  .section2 img {
+    width: 100%;
+  }
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+p {
+  display: flex;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 699px) {
+  .gridIndex {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "titulo"
+      "section1"
+      "section2"
+      "footer";
+  }
+  nav li {
+    display: flex;
+  }
+  .section1 {
+    max-width: 90%;
+  }
+  .section2 img {
+    width: 90%;
+  }
+  .section2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Grid Alquiler*/
+.sub1 {
+  grid-area: sub1;
+}
+.sub2 {
+  grid-area: sub2;
+}
+.par {
+  grid-area: par;
+}
+.video {
+  grid-area: video;
+}
+.gridAlquiler {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "titulo titulo titulo"
+    "sub1 sub1 sub1"
+    "contenedor contenedor contenedor"
+    "sub2 sub2 sub2"
+    "par . video"
+    "footer footer footer";
+  gap: 1rem;
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .gridAlquiler {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav titulo"
+      "nav sub1"
+      "nav contenedor"
+      "nav contenedor"
+      "nav sub2"
+      "par video"
+      "footer footer";
+  }
+  .contenedorAlquiler {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 699px) {
+  .gridAlquiler {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "titulo"
+      "sub1"
+      "contenedor"
+      "sub2"
+      "par"
+      "video"
+      "footer";
+  }
+  .contenedorAlquiler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contenedorAlquiler div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .video {
+    width: 100%;
+  }
+}
+
+/*Grid clases*/
+
+.imgClases {
+  grid-area: img;
+  width: 99%;
+}
+.form {
+  grid-area: form;
+}
+.gridClases {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "titulo  titulo titulo titulo"
+    "img  img par par"
+    "img  img form  form"
+    "footer footer footer footer";
+  gap: 1rem;
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .gridClases {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav titulo titulo"
+      "nav  par par"
+      " img form form"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 699px) {
+  .gridClases {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "titulo"
+      "img"
+      "par"
+      "form"
+      "footer";
+  }
+  .imgClases {
+    margin: auto;
+  }
+  .formularioClases {
+    margin-left: 1rem;
+  }
+}
+
+/*Grid Escuela*/
+
+.lista1 {
+  grid-area: l1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.lista2 {
+  grid-area: l2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.lista1 li {
+  margin: 10px;
+}
+.lista2 li {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.lista2 h3 {
+  margin-top: 10px;
+}
+
+.gridEscuela {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "par par mari mari"
+    "l1 l1 mari mari"
+    "l2 l2 mari mari"
+    "footer footer footer footer";
+  gap: 1rem;
+}
+
+@media (max-width: 699px) {
+  .gridEscuela {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "titulo"
+      "par"
+      "l1"
+      "l2"
+      "mari"
+      "footer";
+  }
+  .imgMariposa {
+    width: 100%;
+  }
+  h2{
+    text-align: center;
+  }
+  .lista1{
+    text-align: center;
+  }
+  .lista2 div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+}
+
+/*Grid Contacto*/
+.text1 {
+  grid-area: text1;
+}
+.contact {
+  grid-area: contacto;
+}
+.text2 {
+  grid-area: text2;
+}
+.form2 {
+  grid-area: form2;
+}
+.imgLuces {
+  grid-area: luz;
+}
+.gridContacto {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "text1 text1 luz luz"
+    "contacto contacto luz luz"
+    "text2 text2 luz luz"
+    "form2 form2 luz luz"
+    "footer footer footer footer";
+  gap: 1rem;
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .gridContacto {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "titulo titulo"
+      "text1 luz"
+      "contacto luz"
+      "text2 form2"
+      "footer footer";
+  }
+  .imgLuces {
+    width: 100%;
+  }
+  .form2 {
+    margin-right: 5px;
+  }
+  nav li{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 699px) {
+  .gridContacto {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "titulo"
+      "text1"
+      "contacto"
+      "text2"
+      "form2"
+      "luz"
+      "footer";
+  }
+  .imgLuces {
+    width: 100%;
+  }
+  .form2 {
+    margin-right: 5px;
+  }
+  .contact {
+    margin-right: 5px;
+  }
+}
