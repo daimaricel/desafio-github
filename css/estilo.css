@@ -48,21 +48,24 @@ nav li a:hover {
   font-weight: bolder;
 }
 
-
 .h1 {
   /* background-color: #db9300; */
   color: white;
-  background: rgb(0,103,48);
-background: linear-gradient(90deg, rgba(0,103,48,1) 32%, rgba(219,147,0,1) 89%);
+  background: rgb(0, 103, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 103, 48, 1) 32%,
+    rgba(219, 147, 0, 1) 89%
+  );
 }
 
-.rotate{
+.rotate {
   transform: rotate(15deg);
 }
-.iconify{
+.iconify {
   transition: all 0.3s;
 }
-.iconify:hover{
+.iconify:hover {
   width: 40px;
   height: 40px;
 }
@@ -193,7 +196,6 @@ footer {
   .section2 img {
     width: 100%;
   }
-  
 }
 
 nav {
@@ -305,7 +307,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-     margin-left: 10px;
+    margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -421,16 +423,16 @@ p {
   .imgMariposa {
     width: 100%;
   }
-  h2{
+  h2 {
     text-align: center;
   }
-  .lista1{
+  .lista1 {
     text-align: center;
   }
-  .lista2 div{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  .lista2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -481,7 +483,7 @@ p {
   .form2 {
     margin-right: 5px;
   }
-  nav li{
+  nav li {
     display: flex;
     flex-direction: row;
   }
