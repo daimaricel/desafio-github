@@ -28,7 +28,7 @@ nav {
 
 nav ul li {
   margin: 1rem;
-  width: 126px;
+  width: 136px;
   height: 20px;
   border: #006736 1px hidden;
 }
@@ -41,11 +41,30 @@ ul li a {
 nav li {
   list-style-type: none;
   display: inline-block;
+  transition: all 0.5s;
+}
+nav li a:hover {
+  color: #db9300;
+  font-weight: bolder;
 }
 
+
 .h1 {
-  background-color: #db9300;
+  /* background-color: #db9300; */
   color: white;
+  background: rgb(0,103,48);
+background: linear-gradient(90deg, rgba(0,103,48,1) 32%, rgba(219,147,0,1) 89%);
+}
+
+.rotate{
+  transform: rotate(15deg);
+}
+.iconify{
+  transition: all 0.3s;
+}
+.iconify:hover{
+  width: 40px;
+  height: 40px;
 }
 
 .centrar {
