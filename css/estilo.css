@@ -4,52 +4,28 @@
   margin: 0;
   padding: 0;
 }
-header {
-  background-image: url("../images/canchasdelanterasdron.jpg");
-  background-position: center;
-  width: 100%;
-  position: relative;
-}
-
-.logo {
-  width: 12rem;
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-nav {
+header{
   background-color: #006736;
+}
+
+.menu a {
+  margin: 1rem;
+  width: 170px;
+  color: white;
+  font-size: 18px;
+  transition: all 0.5s;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  grid-area: nav;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-nav ul li {
-  margin: 1rem;
-  width: 136px;
-  height: 20px;
-  border: #006736 1px hidden;
-}
-
-ul li a {
-  color: white;
-  font-size: 16px;
-}
-
-nav li {
-  list-style-type: none;
-  display: inline-block;
-  transition: all 0.5s;
-}
-nav li a:hover {
+.menu a:hover {
   color: #db9300;
-  font-weight: bolder;
 }
 
 .h1 {
-  /* background-color: #db9300; */
   color: white;
   background: rgb(0, 103, 48);
   background: linear-gradient(
@@ -57,7 +33,14 @@ nav li a:hover {
     rgba(0, 103, 48, 1) 32%,
     rgba(219, 147, 0, 1) 89%
   );
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ font-weight: bold;
+ font-size: 22px;
+ padding-top: 10px;
+ padding-bottom: 10px;
 }
+
 
 .rotate {
   transform: rotate(15deg);
@@ -97,6 +80,21 @@ body {
 
 /* index */
 
+.portada{
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+.carousel{
+  width: 50%;
+  margin-left: 5px;
+}
+.imgCar{
+  height: 400px;
+  object-fit: cover;
+
+}
+
 .section1 {
   background-color: #db9300;
   padding: 40px;
@@ -104,9 +102,9 @@ body {
   display: flex;
   justify-items: center;
   align-items: center;
-}
-.section2 {
-  grid-area: section2;
+  width: 50%;
+  margin-right: 5px;
+  margin-bottom: 0%;
 }
 
 /*alquiler*/
@@ -159,7 +157,7 @@ footer {
 
 /* Grid Index*/
 
-.header {
+/* .header {
   grid-area: header;
 }
 .h1 {
@@ -236,7 +234,7 @@ p {
     display: flex;
     justify-content: center;
   }
-}
+} */
 
 /* Grid Alquiler*/
 .sub1 {

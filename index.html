@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Country tenis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css" />
     <link
       rel="stylesheet"
@@ -12,33 +13,30 @@
     />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   </head>
-  <body class="gridIndex">
-    <header class="header">
-      <a href="index.html">
-        <img
-          class="logo animate__animated animate__zoomInDown"
-          src="images/logo.png"
-          alt="logo"
-      /></a>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="index.html">
+              <img class="logo animate__animated animate__zoomInDown"src="images/logo.png" alt="logo del club" width="150" height="150" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav menu">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="pages/alquileres.html">Alquileres</a>
+                <a class="nav-link" href="pages/clases.html">Clases</a>
+                <a class="nav-link" href="pages/escueladetenis.html">Escuela de tenis</a>
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">INICIO</a>
-        </li>
-
-        <li><a href="pages/alquileres.html">ALQUILERES</a></li>
-
-        <li><a href="pages/clases.html">CLASES</a></li>
-
-        <li><a href="pages/escueladetenis.html">ESCUELA DE TENIS</a></li>
-
-        <li><a href="pages/contacto.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-
     <h1 class="centrar h1">El Country tenis</h1>
-
+    <section class="portada container-fluid">
     <p class="texto centrar section1">
       ¡Bienvenidos! El Country tenis cuenta con 5 canchas de polvo de ladrillo
       equipadas con iluminación LED. Se encuentra dentro del Club Infantil de
@@ -48,31 +46,51 @@
       raqueta, podés alquilar una. Conocé todas nuestras actividades y sumate a
       practicar este hermoso deporte!
     </p>
-
-    <section class="section2">
-      <img src="images/canchasdron.jpg" alt="vista aérea de las canchas" />
-    </section>
-
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/canchasprofes.jpg" class="d-block w-100 imgCar" alt="canchas de tenis y canasto">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/canchasdelanterasdron.jpg" class="d-block w-100 imgCar" alt="canchas vista aerea">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/canchasdron.jpg" class="d-block w-100 imgCar" alt="vista aerea tenis">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
     <footer class="footer">
-      <div>
-        <p>Sitio web creado por Daiana Lastra</p>
-        <p>Todos los derechos reservados</p>
-      </div>
-      <div>
-        <a href="https://www.instagram.com/elcountrytenis/" target="_blank">
-          <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
-        </a>
-        <a href="https://wa.me/+5491130850493/" target="_blank"
-          ><span class="iconify" data-icon="akar-icons:whatsapp-fill"></span>
-        </a>
-        <a href="mailto:countryteniscib@gmail.com/" target="_blank"
-          ><span
-            class="iconify rotate"
-            data-icon="ant-design:mail-outlined"
-          ></span
-        ></a>
-      </div>
-    </footer>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <div>
+          <p>Sitio web creado por Daiana Lastra</p>
+          <p>Todos los derechos reservados</p>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/elcountrytenis/" target="_blank">
+            <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+          </a>
+          <a href="https://wa.me/+5491130850493/" target="_blank"
+            ><span class="iconify" data-icon="akar-icons:whatsapp-fill"></span>
+          </a>
+          <a href="mailto:countryteniscib@gmail.com/" target="_blank"
+            ><span
+              class="iconify rotate"
+              data-icon="ant-design:mail-outlined"
+            ></span
+          ></a>
+        </div>
+      </footer>
+      <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+  </html>
+  
   </body>
-</html>
