@@ -36,49 +36,57 @@
       </nav>
   </header>
     <h1 class="h1 centrar">Clases de tenis</h1>
+
+    <section class="container-fluid clases">
+  
     <img
-      class="imgClases"
+      class="imgClases img-fluid"
       src="../images/canchaypelotas.jpg"
       alt="cancha de tenis"
     />
-
-    <p class="texto section1 clases par">
+ 
+    <div>
+    
+      <p class="texto parClases par">
       Las clases particulares de tenis se adaptan a los días y horarios que vos
       puedas. Rondan los $1600 por hora de clase (el precio final depende del
       día y horario y se define con el profe). Si te gustaría tomar clases llená
       el siguiente formulario y un profe te contactará a la brevedad.
     </p>
-
-    <form class="formularioClases form">
-      <div>
-        <label for="name">Nombre y apellido</label>
-        <input type="text" placeholder="Ej. Juan Perez" id="name" />
+    <form class="formBox">
+      <fieldset>
+        <legend>Formulario</legend>
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Nombre y Apellido</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Ej: Juan Pérez">
+        </div>
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Edad</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Ej:33">
+        </div>
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Disponibilidad horaria</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Ej: jueves por la mañana">
+        </div>
+        <div class="mb-3">
+          <label for="disabledSelect" class="form-label">Nivel de juego</label>
+          <select id="disabledSelect" class="form-select">
+            <option>Principiante</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Correo electrónico</label>
+          <input type="email" id="disabledTextInput" class="form-control" placeholder="Ej: juan@perez.com">
+        </div>
+        <div>
+        <button type="submit" class="btn btn-primary enviar">Enviar</button>
       </div>
-      <div>
-        <label for="edad">Edad</label>
-        <input type="text" placeholder="Ej. 33" id="edad" />
-      </div>
-      <div>
-        <label for="nivel">Nivel de juego</label>
-        <input type="text" placeholder="Ej. principiante" id="nivel" />
-      </div>
-      <div>
-        <label for="disponibilidad">Disponibilidad horaria</label>
-        <input
-          type="text"
-          placeholder="Ej.jueves por la tarde"
-          id="disponibilidad"
-        />
-      </div>
-      <div>
-        <label for="email">Correo electrónico</label>
-        <input type="email" placeholder="Ej. jperez@gmail.com" id="email" />
-      </div>
-      <div>
-        <input type="submit" />
-        <input type="reset" />
-      </div>
+      </fieldset>
     </form>
+  </div>
+  </section>
 
     <footer class="footer">
       <div>
