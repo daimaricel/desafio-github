@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-header{
+header {
   background-color: #006736;
 }
 
@@ -35,10 +35,10 @@ header{
   );
   margin-top: 1rem;
   margin-bottom: 1rem;
- font-weight: bold;
- font-size: 22px;
- padding-top: 10px;
- padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .centrar {
   text-align: center;
@@ -67,18 +67,17 @@ body {
 
 /* index */
 
-.portada{
+.portada {
   display: flex;
   margin-bottom: 1rem;
 }
-.carousel{
+.carousel {
   width: 50%;
   margin-left: 0.5rem;
 }
-.imgCar{
+.imgCar {
   height: 400px;
   object-fit: cover;
-
 }
 
 .section1 {
@@ -99,23 +98,23 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.video{
+.video {
   width: 50%;
   margin-left: 0.5rem;
 }
 
 /*Clases*/
-.clases{
+.clases {
   display: flex;
 }
-.imgClases{
+.imgClases {
   width: 55%;
   margin-right: 0.5rem;
   height: 710px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
-.parClases{
+.parClases {
   background-color: #db9300;
   padding: 25px;
   line-height: 1.5;
@@ -125,39 +124,89 @@ body {
   margin-left: 0.5rem;
 }
 
-.formBox{
+.formBox {
   margin-left: 0.5rem;
-  border:#006736 3px solid;
+  border: #006736 3px solid;
   padding: 10px;
   margin-bottom: 1rem;
 }
-.enviar{
+.enviar {
   background-color: #db9300;
   font-weight: bold;
 }
+/* escuela*/
 
 .imgMariposa {
   width: 500px;
-  grid-area: mari;
+  margin-left: 0.5rem;
+  object-fit: cover;
 }
-
-/* .formularioClases {
+.contenedorEscuela {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.escuelaFlex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  margin-right: 0.5rem;
 }
-form div {
-  margin-top: 7px;
-  margin-bottom: 7px;
-} */
+.parEscuela {
+  background-color: #db9300;
+  padding: 25px;
+  line-height: 1.5;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.lista1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.lista2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.lista1 li {
+  margin: 10px;
+}
+.lista2 li {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.lista2 h3 {
+  margin-top: 10px;
+}
 
+/*Contacto*/
+.contenedorContacto {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.contactoFlex {
+  display: flex;
+  flex-direction: column;
+}
+.contactoFlex p {
+  margin-right: 0.5rem;
+}
+.imgLuces {
+  margin-left: 0.5rem;
+  object-fit: cover;
+}
+.text2 {
+  margin-top: 1rem;
+}
 #ig {
   color: black;
 }
 
 .box {
-  border: 3px #006736 outset;
-  margin-left: 5px;
+  border: 3px #006736 solid;
+  margin-right: 0.5rem;
+  padding: 10px;
 }
 
 footer {
@@ -189,9 +238,6 @@ footer {
 /* Grid Alquiler*/
 
 @media (min-width: 700px) and (max-width: 1100px) {
-  .gridAlquiler {
-    display: grid;
-  }
   .contenedorAlquiler {
     display: flex;
     flex-wrap: wrap;
@@ -199,9 +245,6 @@ footer {
   }
 }
 @media (max-width: 699px) {
-  .gridAlquiler {
-    display: grid;
-  }
   .contenedorAlquiler {
     display: flex;
     flex-direction: column;
@@ -217,199 +260,5 @@ footer {
   }
   .video {
     width: 100%;
-  }
-}
-
-/*Grid clases*/
-
-.form {
-  grid-area: form;
-}
-.gridClases {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "nav nav nav nav"
-    "titulo  titulo titulo titulo"
-    "img  img par par"
-    "img  img form  form"
-    "footer footer footer footer";
-  gap: 1rem;
-}
-@media (min-width: 700px) and (max-width: 1100px) {
-  .gridClases {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "nav titulo titulo"
-      "nav  par par"
-      " img form form"
-      "footer footer footer";
-  }
-}
-
-@media (max-width: 699px) {
-  .gridClases {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "titulo"
-      "img"
-      "par"
-      "form"
-      "footer";
-  }
-  .imgClases {
-    margin: auto;
-  }
-  .formularioClases {
-    margin-left: 1rem;
-  }
-}
-
-/*Grid Escuela*/
-
-.lista1 {
-  grid-area: l1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.lista2 {
-  grid-area: l2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.lista1 li {
-  margin: 10px;
-}
-.lista2 li {
-  margin-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.lista2 h3 {
-  margin-top: 10px;
-}
-
-.gridEscuela {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "nav nav nav nav"
-    "titulo titulo titulo titulo"
-    "par par mari mari"
-    "l1 l1 mari mari"
-    "l2 l2 mari mari"
-    "footer footer footer footer";
-  gap: 1rem;
-}
-
-@media (max-width: 699px) {
-  .gridEscuela {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "titulo"
-      "par"
-      "l1"
-      "l2"
-      "mari"
-      "footer";
-  }
-  .imgMariposa {
-    width: 100%;
-  }
-  h2 {
-    text-align: center;
-  }
-  .lista1 {
-    text-align: center;
-  }
-  .lista2 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/*Grid Contacto*/
-.text1 {
-  grid-area: text1;
-}
-.contact {
-  grid-area: contacto;
-}
-.text2 {
-  grid-area: text2;
-}
-.form2 {
-  grid-area: form2;
-}
-.imgLuces {
-  grid-area: luz;
-}
-.gridContacto {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "nav nav nav nav"
-    "titulo titulo titulo titulo"
-    "text1 text1 luz luz"
-    "contacto contacto luz luz"
-    "text2 text2 luz luz"
-    "form2 form2 luz luz"
-    "footer footer footer footer";
-  gap: 1rem;
-}
-@media (min-width: 700px) and (max-width: 1100px) {
-  .gridContacto {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "nav nav"
-      "titulo titulo"
-      "text1 luz"
-      "contacto luz"
-      "text2 form2"
-      "footer footer";
-  }
-  .imgLuces {
-    width: 100%;
-  }
-  .form2 {
-    margin-right: 5px;
-  }
-  nav li {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media (max-width: 699px) {
-  .gridContacto {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "titulo"
-      "text1"
-      "contacto"
-      "text2"
-      "form2"
-      "luz"
-      "footer";
-  }
-  .imgLuces {
-    width: 100%;
-  }
-  .form2 {
-    margin-right: 5px;
-  }
-  .contact {
-    margin-right: 5px;
   }
 }
