@@ -71,6 +71,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* index */
@@ -124,6 +125,7 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
 .video {
   width: 50%;
   margin-left: 0.5rem;
@@ -166,9 +168,7 @@ body {
 .imgClases {
   width: 55%;
   margin-right: 0.5rem;
-  height: 710px;
-  object-fit: cover;
-  margin-bottom: 1rem;
+  height: 710px
 }
 
 .parClases {
@@ -222,6 +222,7 @@ body {
   }
   .parClases {
     margin-left: 0px;
+    margin-top: 1rem;
   }
   .formBox {
     margin-left: 0px;
@@ -256,30 +257,25 @@ body {
   align-items: center;
 }
 
-.lista1 {
+.lista2{
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
 }
 
-.lista2 {
+.alinear{
+  display: flex;
+  justify-content: center;
+}
+
+.alinear2 p{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.alinear2{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.lista1 li {
-  margin: 10px;
-}
-
-.lista2 li {
-  margin-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.lista2 h3 {
-  margin-top: 10px;
+  align-items: center;
 }
 
 @media (max-width: 699px) {
@@ -294,6 +290,11 @@ body {
   }
   .escuelaFlex {
     margin-right: 0px;
+  }
+
+  .lista2{
+    display: flex;
+    flex-direction: column;
   }
 }
 
