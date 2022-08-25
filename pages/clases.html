@@ -50,9 +50,7 @@
               >
               <a class="nav-link" href="alquileres.html">Alquileres</a>
               <a class="nav-link" href="clases.html">Clases</a>
-              <a class="nav-link" href="escueladetenis.html"
-                >Escuela de tenis</a
-              >
+              <a class="nav-link" href="escueladetenis.html">Escuela de tenis</a>
               <a class="nav-link" href="contacto.html">Contacto</a>
             </div>
           </div>
@@ -132,13 +130,27 @@
               />
             </div>
             <div>
-              <button type="submit" class="btn btn-primary enviar">
+              <button type="button" type="submit" class="btn enviar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Enviar
               </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">¡Listo!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Tu solicitud fue enviada, pronto te contactaremos.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </fieldset>
         </form>
       </div>
+     
     </section>
 
     <footer class="footer">
